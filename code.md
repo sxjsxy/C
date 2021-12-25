@@ -18,3 +18,25 @@ int main(){
 	printf("%f",sum);
 } 
 ```
+## m!和n!（阶乘）
+* 输入m和n，计算m！和n！之和
+* **定义阶乘**<br>
+    需要阶乘的累加数，这个数开始必须是1，如此累乘m或n次。
+```c
+#include <stdio.h>
+int main()
+{
+    int i,n,m,fm=1,fn=1;
+    scanf("%d %d",&m,&n);
+    
+    for(i=1;i<=m;i++){		//阶乘算法块
+        fm=fm*i;
+    }
+    for(i=1;i<=n;i++){
+        fn=fn*i;
+    }
+    
+    printf("%d\n",fm+fn);
+}
+
+```
